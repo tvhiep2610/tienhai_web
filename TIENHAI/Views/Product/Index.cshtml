@@ -1,0 +1,237 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="page-header">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-12 text-center">
+
+
+                <h3>
+                    SẢN PHẨM
+                </h3>
+
+                <p class="page-breadcrumb">
+                    <a href="@Url.Action("Index","Product")">Trang chủ</a> / Sản phẩm
+                </p>
+
+
+            </div>
+
+        </div> <!-- end .row  -->
+
+    </div> <!-- end .container  -->
+
+</section> <!-- end .page-header  -->
+<!--  MAIN CONTENT  -->
+<section class="main-content">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="widget site-sidebar">
+
+                    <h2 class="widget-title">Danh mục sản phẩm</h2>
+
+                    <ul class="widget-post-category clearfix">
+                        <li>
+                            <a title="Xem tất cả những sản phẩm" href="#">Hóa chất Công nghiệp</a>
+                            @*<span class="pull-right badge">...</span>*@
+                        </li>
+                        <li>
+                            <a title="Xem tất cả những sản phẩm" href="#">Hoá chất Keo</a>
+                            @*<span class="pull-right badge">...</span>*@
+                        </li>
+                        <li>
+                            <a title="Xem tất cả những sản phẩm" href="#">Hóa chất Dệt nhuộm</a>
+                            @*<span class="pull-right badge">...</span>*@
+                        </li>
+                        <li>
+                            <a title="Xem tất cả những sản phẩm" href="#">Hóa chất Xây dựng</a>
+                            @*<span class="pull-right badge">...</span>*@
+                        </li>
+                        <li>
+                            <a title="Xem tất cả những sản phẩm" href="#">Hoa chất Thực phẩm</a>
+                            @*<span class="pull-right badge">...</span>*@
+                        </li>
+                        <li>
+                            <a title="Xem tất cả những sản phẩm" href="#">Các hóa chất khác</a>
+                            @*<span class="pull-right badge">...</span>*@
+                        </li>
+                    </ul>
+
+                </div> <!--  end .widget -->
+                <div class="widget site-sidebar">
+
+                    <h2 class="widget-title">Tìm kiếm</h2>
+
+                    <form action="https://templates.bwlthemes.com/fixer_buddies/index.html" id="search-form" class="search-form" role="form" method="get">
+
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm....">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        </div>
+
+                        <input type="hidden" value="submit" />
+
+                    </form> <!-- end #search-form  -->
+
+                </div> <!--  end .widget -->
+                <div class="widget site-sidebar">
+
+                    <h2 class="widget-title">Tags</h2>
+
+                    <ul class="widget-recent-tags clearfix">
+
+                        <li>
+                            <a href="#" title=""> TEA</a>
+                        </li>
+
+                        <li>
+                            <a href="#" title=""> UH 540</a>
+                        </li>
+
+                        <li>
+                            <a href="#" title=""> DEA</a>
+                        </li>
+
+                        <li>
+                            <a href="#" title=""> Tapioca</a>
+                        </li>
+
+                        <li>
+                            <a href="#" title=""> Bột đá</a>
+                        </li>
+
+                        <li>
+                            <a href="#" title=""> PMA</a>
+                        </li>
+
+                    </ul><!--  end .widget-recent-tags -->
+
+                </div> <!--  end .widget -->
+            </div> <!-- end .col-sm-4  -->
+            <div class="col-md-8 col-sm-12">
+                <!-- TEAM SECTION 01 -->
+                <div class="col-lg-4 col-md-4  col-sm-8 col-xs-12">
+                    <div class="team-layout-1 text-center">
+                        <figure class="team-member">
+                            @*<a href="#" title="Hexamethylene Diiscocyanate">
+                        <img src="../../Content/images/p_sanpham01.png" alt="Hexamethylene Diiscocyanate" />
+                    </a>*@
+                            <a class="gallery-light-box xs-margin" data-gall="myGallery" href="../../Content/images/p_sanpham01.png">
+
+                                <figure class="gallery-img">
+
+                                    <img src="../../Content/images/p_sanpham01.png" alt="gallery image" />
+
+                                </figure> <!-- end .cause-img  -->
+
+                            </a> <!-- end .gallery-light-box  -->
+                        </figure> <!-- end. team-member  -->
+                        <article class="team-info">
+                            <h3>Hexamethylene Diiscocyanate</h3>
+                            <span class="team-seperator"></span>
+                            <a href="@Url.Action("Index","ProductChitiet")"><h4>Xem chi tiết</h4></a>
+                        </article>
+                    </div> <!--  end team layout-1 -->
+                </div> <!--  end .col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
+                <div class="col-lg-4 col-md-4  col-sm-8 col-xs-12">
+                    <div class="team-layout-1 text-center">
+                        <figure class="team-member">
+                            @*<a href="#" title="Hexamethylene Diiscocyanate">
+                        <img src="../../Content/images/p_sanpham01.png" alt="Hexamethylene Diiscocyanate" />
+                    </a>*@
+                            <a class="gallery-light-box xs-margin" data-gall="myGallery" href="../../Content/images/p_sanpham01.png">
+
+                                <figure class="gallery-img">
+
+                                    <img src="../../Content/images/p_sanpham01.png" alt="gallery image" />
+
+                                </figure> <!-- end .cause-img  -->
+
+                            </a> <!-- end .gallery-light-box  -->
+                        </figure> <!-- end. team-member  -->
+                        <article class="team-info">
+                            <h3>Hexamethylene Diiscocyanate</h3>
+                            <span class="team-seperator"></span>
+                            <a href="#"><h4>Xem chi tiết</h4></a>
+                        </article>
+                    </div> <!--  end team layout-1 -->
+                </div> <!--  end .col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
+                <div class="col-lg-4 col-md-4  col-sm-8 col-xs-12">
+                    <div class="team-layout-1 text-center">
+                        <figure class="team-member">
+                            @*<a href="#" title="Hexamethylene Diiscocyanate">
+                        <img src="../../Content/images/p_sanpham01.png" alt="Hexamethylene Diiscocyanate" />
+                    </a>*@
+                            <a class="gallery-light-box xs-margin" data-gall="myGallery" href="../../Content/images/p_sanpham01.png">
+
+                                <figure class="gallery-img">
+
+                                    <img src="../../Content/images/p_sanpham01.png" alt="gallery image" />
+
+                                </figure> <!-- end .cause-img  -->
+
+                            </a> <!-- end .gallery-light-box  -->
+                        </figure> <!-- end. team-member  -->
+                        <article class="team-info">
+                            <h3>Hexamethylene Diiscocyanate</h3>
+                            <span class="team-seperator"></span>
+                            <a href="#"><h4>Xem chi tiết</h4></a>
+                        </article>
+                    </div> <!--  end team layout-1 -->
+                </div> <!--  end .col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
+                <div class="col-lg-4 col-md-4  col-sm-8 col-xs-12">
+                    <div class="team-layout-1 text-center">
+                        <figure class="team-member">
+                            @*<a href="#" title="Hexamethylene Diiscocyanate">
+                        <img src="../../Content/images/p_sanpham01.png" alt="Hexamethylene Diiscocyanate" />
+                    </a>*@
+                            <a class="gallery-light-box xs-margin" data-gall="myGallery" href="../../Content/images/p_sanpham01.png">
+
+                                <figure class="gallery-img">
+
+                                    <img src="../../Content/images/p_sanpham01.png" alt="gallery image" />
+
+                                </figure> <!-- end .cause-img  -->
+
+                            </a> <!-- end .gallery-light-box  -->
+                        </figure> <!-- end. team-member  -->
+                        <article class="team-info">
+                            <h3>Hexamethylene Diiscocyanate</h3>
+                            <span class="team-seperator"></span>
+                            <a href="#"><h4>Xem chi tiết</h4></a>
+                        </article>
+                    </div> <!--  end team layout-1 -->
+                </div> <!--  end .col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
+            </div> <!--  end col-sm-8 -->
+          
+        
+        <div class="blog-pagination text-center clearfix">
+
+            <ul class="pagination">
+
+                <li><a href="#" class="prev page-numbers"><i class="fa fa-caret-left"></i></a></li>
+                <li><a href="#" class="page-numbers">1</a></li>
+                <li><a href="#" class="page-numbers current">2</a></li>
+                <li><a href="#" class="page-numbers">3</a></li>
+                <li><a href="#" class="next page-numbers"><i class="fa fa-caret-right"></i></a></li>
+
+            </ul> <!-- end pagination  -->
+
+        </div> <!--  end blog-pagination -->
+
+
+        </div> <!--  end row  -->
+
+ </div><!--  end container -->
+
+</section> <!-- end .main-content  -->

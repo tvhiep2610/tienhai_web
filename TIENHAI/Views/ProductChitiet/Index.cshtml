@@ -1,0 +1,200 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<section class="page-header">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-12 text-center">
+
+
+                    <h3>
+                        SẢN PHẨM
+                    </h3>
+
+                    <p class="page-breadcrumb">
+                        <a href="@Url.Action("Index","Product")">Trang chủ</a> / Sản phẩm
+                    </p>
+
+
+                </div>
+
+            </div> <!-- end .row  -->
+
+        </div> <!-- end .container  -->
+
+    </section> <!-- end .page-header  -->*@
+<!--  MAIN CONTENT  -->
+<section class="main-content">
+
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-12">
+            <div class="widget site-sidebar">
+
+                <h2 class="widget-title">Danh mục sản phẩm</h2>
+
+                <ul class="widget-post-category clearfix">
+                    <li>
+                        <a title="Xem tất cả những sản phẩm" href="#">Hóa chất Công nghiệp</a>
+                        @*<span class="pull-right badge">...</span>*@
+                    </li>
+                    <li>
+                        <a title="Xem tất cả những sản phẩm" href="#">Hoá chất Keo</a>
+                        @*<span class="pull-right badge">...</span>*@
+                    </li>
+                    <li>
+                        <a title="Xem tất cả những sản phẩm" href="#">Hóa chất Dệt nhuộm</a>
+                        @*<span class="pull-right badge">...</span>*@
+                    </li>
+                    <li>
+                        <a title="Xem tất cả những sản phẩm" href="#">Hóa chất Xây dựng</a>
+                        @*<span class="pull-right badge">...</span>*@
+                    </li>
+                    <li>
+                        <a title="Xem tất cả những sản phẩm" href="#">Hoa chất Thực phẩm</a>
+                        @*<span class="pull-right badge">...</span>*@
+                    </li>
+                    <li>
+                        <a title="Xem tất cả những sản phẩm" href="#">Các hóa chất khác</a>
+                        @*<span class="pull-right badge">...</span>*@
+                    </li>
+                </ul>
+
+            </div> <!--  end .widget -->
+            <div class="widget site-sidebar">
+
+                <h2 class="widget-title">Tìm kiếm</h2>
+
+                <form action="https://templates.bwlthemes.com/fixer_buddies/index.html" id="search-form" class="search-form" role="form" method="get">
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm....">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                    </div>
+
+                    <input type="hidden" value="submit" />
+
+                </form> <!-- end #search-form  -->
+
+            </div> <!--  end .widget -->
+            <div class="widget site-sidebar">
+
+                <h2 class="widget-title">Tags</h2>
+
+                <ul class="widget-recent-tags clearfix">
+
+                    <li>
+                        <a href="#" title=""> TEA</a>
+                    </li>
+
+                    <li>
+                        <a href="#" title=""> UH 540</a>
+                    </li>
+
+                    <li>
+                        <a href="#" title=""> DEA</a>
+                    </li>
+
+                    <li>
+                        <a href="#" title=""> Tapioca</a>
+                    </li>
+
+                    <li>
+                        <a href="#" title=""> Bột đá</a>
+                    </li>
+
+                    <li>
+                        <a href="#" title=""> PMA</a>
+                    </li>
+
+                </ul><!--  end .widget-recent-tags -->
+
+            </div> <!--  end .widget -->
+        </div> <!-- end .col-sm-4  -->
+        <!--  SECTION SERVICE 01 -->
+        <div class="col-md-8 col-sm-12">
+            <div class="row">
+                <div class=" col-lg-12 col-md-12 col-sm-8 col-xs-12">
+                    <div id="details_slider" class="details_slider carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#details_slider" data-slide-to="0" class="active">
+                                <img src="~/Content/images/tckt_tsr1000x50.png" alt="" class="" />
+                            </li>
+                            <li data-target="#details_slider" data-slide-to="1" class="active">
+                                <img src="~/Content/images/tckt_tsr1000x50.png" alt="" class="" />
+                            </li>
+                            <li data-target="#details_slider" data-slide-to="2" class="active">
+                                <img src="~/Content/images/tckt_tsr1000x50.png" alt="" class="" />
+                            </li>
+                            <li data-target="#details_slider" data-slide-to="3" class="active">
+                                <img src="~/Content/images/tckt_tsr1000x50.png" alt="" class="e" />
+                            </li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-control item active">
+                                <img src="~/Content/images/tckt_tsr1000x50.png" class="" />
+                            </div>
+                            <div class="carousel-control item active">
+                                <img src="~/Content/images/tckt_tsr1000x50.png" class="" />
+                            </div>
+                            <div class="carousel-control item active">
+                                <img src="~/Content/images/tckt_tsr1000x50.png" class="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="row">
+                <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <!-- hình ảnh chi tiêt sản phẩm-->
+                    <img src="../../Content/images/tckt_tsr1000x50.png" title="image_ctsp" />
+
+                    <div class=" col-lg-6 col-md-6 col-sm-8 col-xs-12">
+
+                        <article class="service-block-1 ">
+
+                            <a>
+
+                                <span style="color: dodgerblue">Tên sản phẩm : </span><span><strong style="color: red">TSR-1000x50</strong></span> <br />
+                                <span style="color: dodgerblue">Tên hóa học : </span>Terpene phenolic resin dispersion<br />
+                                <span style="color: dodgerblue">Số Cas : </span>25359-84-6, 7732-18-5, 9004-82-4<br />
+                                <span style="color: dodgerblue">Công thức phân tử : </span>N/A <br />
+                                <span style="color: dodgerblue">Xuất xứ : </span>Trung Quốc<br />
+                                <span style="color: dodgerblue">Đóng gói : </span>200kg/phuy<br />
+                                <span style="color: dodgerblue"> Ứng dụng : </span>TSR-1000x50 chủ yếu được sử dụng trong keo cao su cloroprene, polymer acrylic hoặc nhũ tương carboxylated SBR.
+                            </a>
+
+                        </article>
+
+                    </div> <!--  end .col-lg-4 col-md-4 col-sm-12  -->
+
+                    <div class="related-post">
+                        <div class="topic-bold-header clearfix">
+                            <h4>Tiêu chuẩn kỹ thuật</h4>
+                            <hr />
+                        </div> <!-- end .topic-bold-header  -->
+                        <div>
+                            <a class="gallery-light-box xs-margin" data-gall="myGallery" href="../../Content/images/tckt_tsr1000x50.png">
+
+                                <figure class="gallery-img">
+
+                                    <img src="../../Content/images/tckt_tsr1000x50.png" alt="gallery image" />
+
+                                </figure> <!-- end .cause-img  -->
+
+                            </a> <!-- end .gallery-light-box  -->
+                        </div>
+                    </div> <!-- end .related-post  -->
+                </div> <!--  end .row  -->
+            </div>
+        </div>
+    </div> <!--  end .container  -->
+</section> <!-- end .main-content  -->

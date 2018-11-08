@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    @*<title>@ViewBag.Title - Công ty TNHH SX_TM TIẾN HẢI</title>*@
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="xenioushk">
+    <link rel="shortcut icon" href="../../Content/images/favicon.png" />
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- The styles -->
+    <link href="../../Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/css/owl.theme.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/css/venobox.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../Content/css/styles.css" type="text/css" />
+
+</head>
+<body>
+    @*<div id="preloader">
+            <span class="margin-bottom"><img src="images/loader.gif" alt="Loading......" /></span>
+        </div>*@
+
+    <!--  HEADER STYLE  03-->
+
+    <header class="main-header-2 clearfix" data-sticky_header="true">
+
+        <section class="header-wrapper navgiation-wrapper">
+
+            <div class="main-top-header hidden-sm hidden-xs clearfix">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-6 col-sm-6 text-left ">
+                            <div class="top-bar-link">
+                                <strong>HOT LINE</strong> : +084-2839-485-090, +084-2838-110-529
+                            </div>         
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-6 text-right">
+
+                            <div class="top-bar-link">
+                                <a href="#">Đăng ký</a> <span class="separator-line"></span>
+                                <a href="#">Đăng nhập</a> @*<span class="separator-line"></span>*@
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 header-col-logo">
+                            <div class="header-logo logo">
+                                <a href="@Url.Action("Index","Home")">
+                                    <img src="../../Content/images/logo01.png" alt="Logo">
+                                </a>
+                            </div><!-- end .logo  -->
+                        </div><!-- end .col-md-3  -->
+
+                        <div class="col-md-8 col-sm-12 hidden-xs">
+                            <div class="row">
+
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="header-icon-box">
+                                        <div class="icon-container">
+                                            <i class="fa fa-building-o"></i>
+                                        </div>
+                                        <div class="text">
+                                            <span class="head-heading">Địa chỉ văn phòng</span>
+                                            <span class="head-content">
+                                                31/27 Nguyễn Đình Khơi, P.14,Q.Tân Bình, Tp.HCM
+                                            </span>
+                                        </div>
+                                    </div><!-- end .repair-icon-box  -->
+                                </div><!-- end .col-md-4  -->
+
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="header-icon-box">
+                                        <div class="icon-container">
+                                            <i class="fa fa-calendar-check-o"></i>
+                                        </div>
+                                        <div class="text">
+                                            <span class="head-heading">Giờ làm việc</span>
+                                            <span class="head-content">
+                                                Thứ Hai - Thứ Sáu <br />08:00 AM - 05:00 PM
+                                            </span>
+                                        </div>
+                                    </div><!-- end .header-icon-box  -->
+                                </div> <!-- end .col-md-4  -->
+
+                                <div class="col-md-4 col-sm-4 clearfix">
+                                    <a class="btn btn-theme btn-square btn-header-cta margin-top-36 pull-right" href="@Url.Action("Index","Contact")" title="Hãy liên hệ với chúng tôi">LIÊN HỆ NGAY</a>
+                                </div><!-- end .col-md-4  -->
+
+                            </div> <!-- end .row  -->
+                        </div><!-- end .col-md-8  -->
+
+                    </div><!-- end .row  -->
+                </div><!-- end .container  -->
+            </div><!-- end header-top  -->
+
+            <div class="navbar navbar-default">
+                <div class="container clearfix">
+                    <div class="navbar-collapse collapse pull-left">
+                        <ul class="nav navbar-nav">
+                            <li class="drop">
+                                <a href="@Url.Action("Index","Home")" title="Home" class="link-active">TRANG CHỦ</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Index","About")" title="About Us">GIỚI THIỆU</a>
+                            </li>
+                            <li class="drop">
+                                <a href="@Url.Action("Index","Product")" title="Production">SẢN PHẨM</a>
+                                @*<ul class="drop-down level3">
+                                    <li><a href="service-details.html" title="Single Event">SẢN PHẨM</a></li>
+                                </ul>*@
+                            </li>
+                            @*<li class="drop">
+                                <a href="#">Pages</a>
+                                <ul class="drop-down">
+                                    <li><a href="appointment.html" title="Appointment">Appointment</a></li>
+                                    <li class="drop">
+                                        <a href="#">Blog</a>
+                                        <ul class="drop-down level3">
+                                            <li><a href="blog.html">All Posts</a></li>
+                                            <li><a href="single.html">Single Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop">
+                                        <a href="#">Gallery</a>
+                                        <ul class="drop-down level3">
+                                            <li><a href="gallery-1.html">Layout 01</a></li>
+                                            <li><a href="gallery-2.html">Layout 02</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="faq.html" title="Faq">FAQ</a></li>
+                                    <li><a href="coming-soon.html" title="Coming Soon">Coming Soon</a></li>
+                                    <li><a href="404.html" title="404 Page">404 Page</a></li>
+                                    <li class="drop">
+                                        <a href="#">Level 3</a>
+                                        <ul class="drop-down level3">
+                                            <li><a href="#">Level 3.1</a></li>
+                                            <li><a href="#">Level 3.2</a></li>
+                                            <li><a href="#">Level 3.3</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="drop">
+                                <a href="#">Elements</a>
+                                <ul class="drop-down level3">
+                                    <li><a href="element-counter.html" title="Counter">Counter</a></li>
+                                    <li><a href="element-cta.html" title="CTA">CTA/Promo Box</a></li>
+                                    <li><a href="element-feedback.html" title="Testimonial">Testimonial</a></li>
+                                    <li><a href="element-highlights.html" title="Highlights">Highlights</a></li>
+                                    <li><a href="element-logos.html" title="Logos">Logos</a></li>
+                                    <li><a href="element-pricing-table.html" title="Pricing">Pricing</a></li>
+                                    <li><a href="element-process.html" title="Process">Process</a></li>
+                                    <li><a href="element-service.html" title="Service">Service</a></li>
+                                    <li><a href="element-subscribe.html" title="Subscribe">Subscribe</a></li>
+                                    <li><a href="element-team.html" title="Teams">Teams</a></li>
+                                </ul>
+                            </li>*@
+                            <li><a href="@Url.Action("Index","Contact")" title="Contact">LIÊN HỆ</a></li>
+                        </ul> <!-- end .nav .navbar-nav  -->
+                    </div>
+                    <div class="navbar-header pull-right">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-contact">
+
+                            <div class="top-bar-social margin-top-16">
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end .container  -->
+            </div> <!-- end .navbar .navbar-default  -->
+
+        </section>
+
+    </header> <!-- end main-header  -->
+
+
+    @RenderBody()
+    <!-- START FOOTER  -->
+
+    <footer class="section-pure-black-bg">
+
+        <section class="footer-widget-area footer-widget-area-bg section-custom-bg" data-bg_color="#111111" data-bg_opacity="0.9">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+
+                        <div class="footer-widget">
+
+                            <div class="sidebar-widget-wrapper">
+
+                                <div class="textwidget about-footer">
+
+                                    <div class="footer-widget-header clearfix">
+                                        <h3>Giới thiệu công ty</h3>
+                                    </div> <!--  end .footer-widget-header -->
+
+                                    <div class="footer-about-text">
+                                        Tiến Hải là nhà đại diện phân phối hóa chất cho các tập đoàn sản xuất hóa chất nước ngoài như Dow Chemicals, Waker, Basf, Munzing,...
+                                    </div>
+
+                                    <div class="social-icons margin-top-24">
+
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+
+                                        <a href="#">
+                                            <i class="fa fa-pinterest-p"></i>
+                                        </a>
+
+                                        <a href="#">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+
+                                        <a href="#">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- end .footer-widget-wrapper  -->
+
+                        </div> <!--  end .footer-widget  -->
+
+                    </div> <!--  end .col-md-4 col-sm-12 -->
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+
+                        <div class="footer-widget">
+
+                            <div class="sidebar-widget-wrapper">
+
+                                <div class="footer-widget-header clearfix">
+                                    <h3>Liên hệ với chúng tôi</h3>
+                                </div> <!--  end .footer-widget-header -->
+
+
+                                <div class="textwidget">
+
+                                    <i class="fa fa-envelope-o fa-contact"></i>
+                                    <p><a href="#">support-us@tienhaichem.com</a><br /><a href="#">Sale-now@tienhaichem.com</a></p>
+
+                                    <i class="fa fa-location-arrow fa-contact"></i>
+                                    <p>31/27 Nguyễn Đình Khơi,P.14<br />Q.Tân Bình, Tp.HCM</p>
+
+                                    <i class="fa fa-phone fa-contact"></i>
+                                    <p>Office:&nbsp; (+084) 2838 110 529<br />Cell:&nbsp; (+084) 2839 485 090</p>
+
+                                </div>
+
+                            </div> <!-- end .footer-widget-wrapper  -->
+
+                        </div> <!--  end .footer-widget  -->
+
+                    </div> <!--  end .col-md-4 col-sm-12 -->
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+
+                        <div class="footer-widget">
+
+                            <div class="sidebar-widget-wrapper">
+
+                                <div class="footer-widget-header clearfix">
+                                    <h3>Giờ làm việc</h3>
+                                </div> <!--  end .footer-widget-header -->
+
+                                <div class="textwidget">
+                                    <ul class="opening-shedule">
+                                        <li>
+                                            <span> Thứ Hai - Thứ Sáu : </span>
+                                            <div class="pull-right"> 8:00 AM - 5:00 PM</div>
+                                        </li>
+                                        <li>
+                                            <span> Thứ Bảy :</span>
+                                            <div class="pull-right"> 8:00 AM - 5:00 PM</div>
+                                        </li>
+                                        <li>
+                                            <span> Chủ Nhật :</span>
+                                            <div class="pull-right"> Nghỉ</div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+
+                            </div> <!-- end .footer-widget-wrapper  -->
+
+                        </div> <!--  end .footer-widget  -->
+
+                    </div> <!--  end .col-md-4 col-sm-12 -->
+
+                </div> <!-- end row  -->
+
+            </div> <!-- end .container  -->
+
+        </section> <!--  end .footer-widget-area  -->
+        <!--FOOTER CONTENT  -->
+
+        <section class="footer-contents">
+
+            <div class="container">
+
+                <div class="row clearfix">
+                    <div class="col-md-6 col-sm-12 clearfix">
+                        <p class="copyright-text"> Copyright © 2017-2018. All Right Reserved - by TIENHAI </p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 text-right clearfix">
+                        <ul class="footer-link">
+                            <li><a href="#">Discounts</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </footer>
+
+    <!-- BACK TO TOP BUTTON  -->
+    <a id="backTop">Back To Top</a>
+    <script src="../../Content/js/jquery.min.js"></script>
+    <script src="../../Content/js/bootstrap.min.js"></script>
+    <script src="../../Content/js/wow.min.js"></script>
+    <script src="../../Content/js/jquery.backTop.min.js"></script>
+    <script src="../../Content/js/waypoints.min.js"></script>
+    <script src="../../Content/js/waypoints-sticky.min.js"></script>
+    <script src="../../Content/js/owl.carousel.min.js"></script>
+    <script src="../../Content/js/jquery.stellar.min.js"></script>
+    <script src="../../Content/js/jquery.counterup.min.js"></script>
+    <script src="../../Content/js/venobox.min.js"></script>
+    <script src="../../Content/js/custom-scripts.js"></script>
+
+
+</body>
+</html>

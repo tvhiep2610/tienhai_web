@@ -1,0 +1,161 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--  PAGE HEADING -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-12 text-center">
+
+
+                <h3>
+                    Liên hệ
+                </h3>
+
+                <p class="page-breadcrumb">
+                    <a href="@Url.Action("Index","Contact")">Trang chủ</a> / Liên hệ
+                </p>
+
+
+            </div>
+
+        </div> <!-- end .row  -->
+
+    </div> <!-- end .container  -->
+
+</section> <!-- end .page-header  -->
+
+
+<section class="section-content-block section-contact-block">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-6 wow fadeInLeft">
+
+                <div class="contact-form-block">
+
+                    <h2 class="contact-title">Gửi thông tin liên hệ</h2>
+
+                    <form role="form" action="#" method="post" id="contact-form">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Họ và tên" data-msg="Please Write Your Name" />
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="user_email" name="user_email" placeholder="Email" data-msg="Please Write Your Valid Email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email_subject" name="email_subject" placeholder="Tiêu đề" data-msg="Please Write Your Message Subject" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="your_phone" name="phone_subject" placeholder="Số điện thoại" data-msg="Please Write Your Phone" />
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" name="email_message" id="email_message" placeholder="Nội dung" data-msg="Please Write Your Message"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-custom">Gưi thông tin</button>
+                        </div>
+
+                    </form>
+
+                </div> <!-- end .contact-form-block  -->
+
+            </div> <!--  end col-sm-6  -->
+
+            <div class="col-sm-6 wow fadeInRight">
+
+                <h2 class="contact-title">Bản đồ</h2>
+
+
+                <div class="section-google-map-block wow fadeInUp">
+
+                    @*<div id="map_canvas"></div>*@
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.6070491571563!2d106.6571022004913!3d10.794907799320226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529346583b5e9%3A0x7ba861306fe72ce0!2zQ8O0bmcgVHkgVG5oaCBTeCBUbSBUaeG6v24gSOG6o2k!5e0!3m2!1svi!2s!4v1541387403746" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                </div> <!-- end .section-content-block  -->
+
+            </div> <!--  end col-sm-6  -->
+
+        </div> <!-- end row  -->
+
+    </div> <!--  end .container -->
+
+</section> <!-- end .section-content-block  -->
+<!--  MAIN CONTENT  -->
+
+<section class="section-content-block section-contact-block">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <h2 class="contact-title">Contact us</h2>
+            </div>
+
+            <div class="col-md-3">
+
+                <ul class="contact-info">
+                    <li>
+                        <span class="icon-container"><i class="fa fa-home"></i></span>
+                        <address><a> 31/27 Nguyễn Đình Khơi ,P.14,Q.Tân Bình,Tp.HCM</a></address>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <ul class="contact-info">
+
+                    <li>
+                        <span class="icon-container"><i class="fa fa-phone"></i></span>
+                        <address><a href="#">+084.2839.485.090 +084.2838.110.529</a></address>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-md-3">
+                <ul class="contact-info">
+                    <li>
+                        <span class="icon-container"><i class="fa fa-envelope"></i></span>
+                        <address><a href="mailto:">Sale-us@tienhaichem.com Support-us@tienhaichem.com</a></address>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <ul class="contact-info">
+                    <li>
+                        <span class="icon-container"><i class="fa fa-globe"></i></span>
+                        <address><a href="#">www.tienhaichem.com</a></address>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
