@@ -53,6 +53,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -202,6 +204,33 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ModelTienHai.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTienHai.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModelTienHai.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTienHai.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModelTienHai.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTienHai.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_About.cs">
+      <DependentUpon>ModelTienHai.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_Banner.cs">
+      <DependentUpon>ModelTienHai.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_Logo.cs">
+      <DependentUpon>ModelTienHai.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_Producttieubieu.cs">
+      <DependentUpon>ModelTienHai.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -315,6 +344,16 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Models\ModelTienHai.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelTienHai.edmx</DependentUpon>
+      <LastGenOutput>ModelTienHai.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ModelTienHai.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelTienHai.edmx</DependentUpon>
+      <LastGenOutput>ModelTienHai.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -324,6 +363,13 @@
     <Content Include="Content\fonts\fontawesome-webfont3e6e.ttf" />
     <Content Include="Content\fonts\fontawesome-webfont3e6e.woff" />
     <Content Include="Content\fonts\fontawesome-webfontd41d.eot" />
+    <EntityDeploy Include="Models\ModelTienHai.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelTienHai.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ModelTienHai.edmx.diagram">
+      <DependentUpon>ModelTienHai.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -387,6 +433,9 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

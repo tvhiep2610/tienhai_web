@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="TIENHAIModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_About">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="path" Type="ntext" />
+          <Property Name="noidung1" Type="ntext" />
+          <Property Name="noidung2" Type="ntext" />
+          <Property Name="noidung3" Type="ntext" />
+          <Property Name="noidung4" Type="ntext" />
+          <Property Name="hienthi" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="tbl_Banner">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="path" Type="ntext" />
+          <Property Name="noidung1" Type="ntext" />
+          <Property Name="noidung2" Type="ntext" />
+          <Property Name="noidung3" Type="ntext" />
+          <Property Name="hienthi" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="tbl_Logo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="path" Type="ntext" />
+          <Property Name="hienthi" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="tbl_Producttieubieu">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="path" Type="ntext" />
+          <Property Name="tensp" Type="ntext" />
+          <Property Name="hienthi" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityContainer Name="TIENHAIModelStoreContainer">
+          <EntitySet Name="tbl_About" EntityType="Self.tbl_About" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Banner" EntityType="Self.tbl_Banner" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Logo" EntityType="Self.tbl_Logo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Producttieubieu" EntityType="Self.tbl_Producttieubieu" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TIENHAIModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_Banner">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="noidung1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="noidung2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="noidung3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="hienthi" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="TIENHAIEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_Banner" EntityType="Self.tbl_Banner" />
+          <EntitySet Name="tbl_About" EntityType="TIENHAIModel.tbl_About" />
+          <EntitySet Name="tbl_Producttieubieu" EntityType="TIENHAIModel.tbl_Producttieubieu" />
+          <EntitySet Name="tbl_Logo" EntityType="TIENHAIModel.tbl_Logo" />
+        </EntityContainer>
+        <EntityType Name="tbl_About">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="noidung1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="noidung2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="noidung3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="noidung4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="hienthi" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tbl_Producttieubieu">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="tensp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="hienthi" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tbl_Logo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="hienthi" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TIENHAIModelStoreContainer" CdmEntityContainer="TIENHAIEntities">
+          <EntitySetMapping Name="tbl_Banner">
+            <EntityTypeMapping TypeName="TIENHAIModel.tbl_Banner">
+              <MappingFragment StoreEntitySet="tbl_Banner">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="path" ColumnName="path" />
+                <ScalarProperty Name="noidung1" ColumnName="noidung1" />
+                <ScalarProperty Name="noidung2" ColumnName="noidung2" />
+                <ScalarProperty Name="noidung3" ColumnName="noidung3" />
+                <ScalarProperty Name="hienthi" ColumnName="hienthi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_About">
+            <EntityTypeMapping TypeName="TIENHAIModel.tbl_About">
+              <MappingFragment StoreEntitySet="tbl_About">
+                <ScalarProperty Name="hienthi" ColumnName="hienthi" />
+                <ScalarProperty Name="noidung4" ColumnName="noidung4" />
+                <ScalarProperty Name="noidung3" ColumnName="noidung3" />
+                <ScalarProperty Name="noidung2" ColumnName="noidung2" />
+                <ScalarProperty Name="noidung1" ColumnName="noidung1" />
+                <ScalarProperty Name="path" ColumnName="path" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Producttieubieu">
+            <EntityTypeMapping TypeName="TIENHAIModel.tbl_Producttieubieu">
+              <MappingFragment StoreEntitySet="tbl_Producttieubieu">
+                <ScalarProperty Name="hienthi" ColumnName="hienthi" />
+                <ScalarProperty Name="tensp" ColumnName="tensp" />
+                <ScalarProperty Name="path" ColumnName="path" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Logo">
+            <EntityTypeMapping TypeName="TIENHAIModel.tbl_Logo">
+              <MappingFragment StoreEntitySet="tbl_Logo">
+                <ScalarProperty Name="hienthi" ColumnName="hienthi" />
+                <ScalarProperty Name="path" ColumnName="path" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
